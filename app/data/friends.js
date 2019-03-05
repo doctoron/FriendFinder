@@ -1,6 +1,6 @@
 const friends= [
   {
-    "name":"Ahmed",
+    "name":"Jeffrey",
     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
     "scores":[
         5,
@@ -16,7 +16,7 @@ const friends= [
       ]
   },
   {
-    "name":"Ahmed2",
+    "name":"Rashida",
     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
     "scores":[
         5,
@@ -32,7 +32,7 @@ const friends= [
       ]
   },
   {
-    "name":"Ahmed3",
+    "name":"Francine",
     "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
     "scores":[
         5,
@@ -46,6 +46,22 @@ const friends= [
         4,
         1
       ]
-  }
+  },
+  {
+  "name":"Arturo",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+}
 ]
-module.exports = friends
+module.exports = friends;

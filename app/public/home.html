@@ -4,16 +4,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>Friend Finder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+  
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<style>
+.jumbotron .h1, 
+.jumbotron h1 {
+    font-size: 63px;
+    color: #fffaf0;
+    text-shadow: 2px 2px #000000;
+}
+.jumbotron {
+  background-color: chocolate;
+  color: #09095c;
+    text-shadow: .25px .25px #ffd176;
+}
+h3 {
+  color: #fffff6;
+}
 
+</style>
 </head>
 
 <body>
@@ -21,22 +37,22 @@
   <div class="container">
 
     <div class="jumbotron">
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+      <h1><i class="logo" aria-hidden="true"></i> Friend Finder</h1>
       <hr>
-      <h2>Answer a few basic questions. </h2>
-      <h2>Then find the friend with the greatest compatibility!</h2>
-      <h3><i>"Search yourself... you know it to be true..."</i></h3>
+      <h2>Please answer these 10 questions. </h2>
+      <h2>Then match with your most compatibile new friend!</h2>
+      <h3><i>"Only the truth will last..."</i></h3>
       <br>
 
       <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+        <a href="/survey"><button type="button" class="w3-btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
       </div>
 
     </div>
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="">GitHub Repo</a></p> <!-- insert link to Heroku routed friends list--> 
       </div>
     </footer>
 
