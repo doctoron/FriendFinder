@@ -1,38 +1,56 @@
-// ===============================================================================
 // LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
-const friends = require("../data/friends")
+// Linking my routes to source of arrays of information on friends, photos and survey scores.
+const friends = require("../../data/friends")
 
-// ===============================================================================
 // ROUTING
-// ===============================================================================
+// API GET Requests
+// In each of the below cases when a user visits a link
+// (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
 
-module.exports = function(app) {
-  app.get("./../data/friends", function(req, res) {
-res.json(friends)  });
+// A GET Route to  display a JSON of all possible friends
+// module.exports = (app) => {
+  // app.get('/friends', (req, res)=> {
+  //   res.sendFile(path.join(__dirname, "../data/friends.js"));
+  // });
+
+module.exports = (app) => {  
+  app.get("/api/friends", (req, res) => {
+    res.json(friends)
+  });
 };
-  // API GET Requests
-  // Below code handles when users "visit" a page.
-  // In each of the below cases when a user visits a link
-  // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-  // ---------------------------------------------------------------------------
 
+// API POST Requests
+// Below code handles the form response that a user submits and submits data to the server.
+// The form data (JSON object) is pushed to the appropriate js array.
+module.exports = app => {
+app.post("/api/friends", (req, res) => {
+  let newFriend = req.body;
+  console.log(newFriend);
 
-  // API POST Requests
-  // Below code handles when a user submits a form and thus submits data to the server.
-  // In each of the below cases, when a user submits form data (a JSON object)
-  // ...the JSON is pushed to the appropriate JavaScript array
-  // (ex. User fills out a reservation request... this data is then sent to the server...
-  // Then the server saves the data to the tableData array)
-  // ---------------------------------------------------------------------------
+  let newScore = newFriend.scores;
 
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    // req.body is available since we're using the body parsing middleware
+  let newScoreTot;
+  let bestFriend = { name: "", photo: "", matchScore: Infinity }
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+  for (i = 0; i < friends.length; i++) {
+    newScoreTot = 0
+    let currentFriend = friends[i]
+
+    for (j = 0; j < currentFriend.scores.length; j++) {
+      let currentFriendScore = currentFriend.scores[j];
+      let currentUserScore = newScore[j];
+      //Math.absolute function review
+      newScoreTot += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
+    }
+    // As close to currentUserScore as possible will be the best match
+    if (newScoreTot <= bestFriend.matchScore) {
+      bestFriend.name = currentFriend.name;
+      bestFriend.photo = currentFriend.photo;
+      bestFriend.matchScore = newScoreTot;
+    }
+  }
+  friends.push(newFriend);
+  res.json(bestFriend);
+})
+};
 
