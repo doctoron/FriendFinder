@@ -1,27 +1,24 @@
 ### Overview
-Not yet completed!!!
-# FriendFinder
-Node and express servers used to make a 'FriendFinder; or very simple dating app. The site utilizes a survey
-form that will make comparisons between your answers and those given by other users.  The app will then display
-and picture of the user with the closest match overall from the survey answers.  
+Node.js and Express.js server used to make a 'FriendFinder; or very simple dating app. 
 
-Versions:
-Node-js v10.15.2  
-Node-Express 4.16.4
-Heroku/7.22.4 darwin-x64 node-v11.10.1
-
-
+# FriendFinder:
+The site utilizes a survey form that will make comparisons between your answers and those given by other users.  
+The app will then display and picture of the user with the closest match overall from the survey answers.  
 
 - - -
 
 ### Setup
 * Ten (10) survey question were chosen with answers scaled from 1 to 5 based on how much the user agrees or disagrees with
 the question.  
+Versions utilized:
+Node-js v10.15.2  
+Node-Express 4.16.4
+Heroku/7.22.4 darwin-x64 node-v11.10.1
 
 
 ### Running Locally:
 * Make sure you have Node.js and Heroku installed.
-* git clone https://github.com/doctoron/FriendFinder or clone your own fork
+* Use git clone https://github.com/doctoron/FriendFinder or clone your own fork
 * cd FriendFinder
 * npm install
 * npm start
