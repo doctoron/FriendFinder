@@ -11,9 +11,6 @@ Node-Express 4.16.4
 Heroku/7.22.4 darwin-x64 node-v11.10.1
 
 
-## BCS Submission
-* The Heroku-deployed and Github links were supplied on the BCS hub.
-* Deployed on the via the  https://Github.io link AND the link to the Github Repository was provided
 
 - - -
 
@@ -64,6 +61,10 @@ const PORT = process.env.PORT || 8080;`
 
 ### Create a README.md
 This `README.md` was created in compliance with the project spec and deployed to my repository as described. 
+
+## BCS Submission
+* The Heroku-deployed and Github links were supplied on the BCS hub.
+* Deployed on the via the  https://Github.io link AND the link to the Github Repository was provided
 
 ### Add To Your Portfolio
 This project piece was added to `https://doctoron.github.io/Bootstrap-Portfolio/` as specified.
