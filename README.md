@@ -53,7 +53,8 @@ the question.
     4. Data is saved inside of `/data/friends and a display of JSON contents using API Friends List link on the home page.
 
 ## Calculations based on absolute value of the differences
-    Use of Math.abs() implemented to achieve compatibility calculations.  This function strips negative assignments needed to make the comparisons possible. 
+    Use of Math.abs() implemented to achieve compatibility calculations.  This function strips negative assignments 
+    needed to make the comparisons possible. 
 
 ### Hosting on Heroku
 https://tranquil-scrubland-45654.herokuapp.com/
