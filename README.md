@@ -61,7 +61,7 @@ This `README.md` was created in compliance with the project spec and deployed to
 
 ## BCS Submission
 * The Heroku-deployed and Github links were supplied on the BCS hub.
-* Deployed on the via the  https://Github.io link AND the link to the Github Repository was provided
+* A link to the Github Repository was provided here `https://github.com/doctoron/FriendFinder.git`
 
 ### Add To Your Portfolio
 This project piece was added to https://doctoron.github.io/Bootstrap-Portfolio/ as specified.
