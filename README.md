@@ -33,14 +33,14 @@ the question.
 ### Deploying to Heroku
 ## Be sure to create a .gitignore file in the root folder and add node_modules before continuing.
     * From the bash terminal:
-        $ heroku create (connects your repo with Heroku)
+    `$ heroku create (connects your repo with Heroku)`
     * Navigate to www.heroku.com and login with your credentials.
     * Find your Heroku app's name in the dashboard and click on it.
     * Make sure you select the free option, then click the Provision button
-        $ git push heroku master
-        $ heroku open
+        `$ git push heroku master`
+        `$ heroku open`
     * If the app doesn't come up, proceed to troubleshooting:
-    https://devcenter.heroku.com/articles/troubleshooting-node-deploys#check-your-buildpack
+    `https://devcenter.heroku.com/articles/troubleshooting-node-deploys#check-your-buildpack`
 
 
 ### Specifications met
