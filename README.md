@@ -34,7 +34,7 @@ Heroku/7.22.4 darwin-x64 node-v11.10.1
     `$ git push heroku master`
     `$ heroku open`
     * Note that if the app doesn't come up, you should proceed to troubleshooting:
-    `https://devcenter.heroku.com/articles/troubleshooting-node-deploys#check-your-buildpack`
+    https://devcenter.heroku.com/articles/troubleshooting-node-deploys#check-your-buildpack
 
 
 ### Specifications met
