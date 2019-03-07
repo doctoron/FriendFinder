@@ -30,10 +30,10 @@ Heroku/7.22.4 darwin-x64 node-v11.10.1
     `$ heroku create (connects your repo with Heroku)`
     * Navigate to www.heroku.com and login with your credentials.
     * Find your Heroku app's name in the dashboard and click on it.
-    * Make sure you select the free option, then click the Provision button
-        `$ git push heroku master`
-        `$ heroku open`
-    * If the app doesn't come up, proceed to troubleshooting:
+    * Make sure you select the free option, then click the Provision button, then:
+    `$ git push heroku master`
+    `$ heroku open`
+    * Note that if the app doesn't come up, you should proceed to troubleshooting:
     `https://devcenter.heroku.com/articles/troubleshooting-node-deploys#check-your-buildpack`
 
 
