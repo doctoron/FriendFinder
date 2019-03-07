@@ -10,11 +10,18 @@ const express = require("express");
 // This sets up the basic properties for our express server
 // ==============================================================================
 
+// logger must be required in order to run
+const logger = require('./middleware/logger');
+
 // Tells node that we are creating an "express" server
 const app = express();
 
+// Init middleware (commented out logger initialization only for testing purposes and should be restored later)
+app.use(logger);
+
+
 // Sets an initial port. We"ll use this later in our listener
-const PORT = process.env.PORT |5000;
+const PORT = process.env.PORT |8080;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
