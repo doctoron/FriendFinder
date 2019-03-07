@@ -64,6 +64,6 @@ This `README.md` was created in compliance with the project spec and deployed to
 * Deployed on the via the  https://Github.io link AND the link to the Github Repository was provided
 
 ### Add To Your Portfolio
-This project piece was added to `https://doctoron.github.io/Bootstrap-Portfolio/` as specified.
+This project piece was added to https://doctoron.github.io/Bootstrap-Portfolio/ as specified.
 
 - - -
