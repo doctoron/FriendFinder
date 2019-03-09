@@ -1,19 +1,19 @@
 // LOAD DATA
 // Linking my routes to source of arrays of information on friends, photos and survey scores.
-const friends = require("../../data/friends")
-
+const friends = require("../../data/friends");
+const path = require("path");
 // ROUTING
 // API GET Requests
 // In each of the below cases when a user visits a link
 // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
 
 module.exports = (app) => {
-app.get('/friends', (req, res)=> {
-  res.sendFile(path.join(__dirname, "../data/friends.js"));
-});
+  app.get('/friends', (req, res) => {
+    res.sendFile(path.join(__dirname, "../data/friends.js"));
+  });
 
-// A GET Route to  display a JSON of all possible friends
-// module.exports = (app) => {
+  // A GET Route to  display a JSON of all possible friends
+  // module.exports = (app) => {
   app.get("/api/friends", (req, res) => {
     res.json(friends)
   });
@@ -30,7 +30,11 @@ app.get('/friends', (req, res)=> {
     let newScore = newFriend.scores;
 
     let newScoreTot;
-    let bestFriend = { name: "", photo: "", matchScore: Infinity }
+    let bestFriend = {
+      name: "",
+      photo: "",
+      matchScore: Infinity
+    }
 
     for (i = 0; i < friends.length; i++) {
       newScoreTot = 0
