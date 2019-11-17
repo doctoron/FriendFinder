@@ -1,8 +1,14 @@
 .jumbotron .h1, 
 .jumbotron h1 {
     font-size: 63px;
-    background-color: chocolate;
-    color: floralwhite;
+    color: #fffaf0;
     text-shadow: 2px 2px #000000;
 }
-
+.jumbotron {
+  background-color: chocolate;
+  color: #09095c;
+    text-shadow: .25px .25px #ffd176;
+}
+h3 {
+  color: #fffff6;
+}

@@ -1,64 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Friend Finder</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-<style>
-.jumbotron .h1, 
-.jumbotron h1 {
-    font-size: 63px;
-    color: #fffaf0;
-    text-shadow: 2px 2px #000000;
-}
-.jumbotron {
-  background-color: chocolate;
-  color: #09095c;
-    text-shadow: .25px .25px #ffd176;
-}
-h3 {
-  color: #fffff6;
-}
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Friend Finder</title>
+  </head>
 
-</style>
-</head>
-
-<body>
-
-  <div class="container">
-
-    <div class="jumbotron">
-      <h1><i class="logo" aria-hidden="true"></i> Friend Finder</h1>
-      <hr>
-      <h2>Please answer these 10 questions. </h2>
-      <h2>Then match with your most compatibile new friend!</h2>
-      <h3><i>"Only the truth will last..."</i></h3>
+  <body>
+    <!-- Nav Bar -->
+    <div class="container">
+      <nav>
+        <div class="nav-wrapper blue">
+          <div class="container">
+            <a href="#" class="brand-logo center">Friend Finder<i class="fa fa-trademark right"></i> </a>
+            <ul class="right">
+              <!-- <li><a href="#" class="clear-btn btn blue lighten-3">Restart</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
       <br>
 
-      <div>
-        <a href="/survey"><button type="button" class="w3-btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+      <!-- Form Card -->
+      <div class="container">
+        <jumbotron>
+          <div class="card">
+            <h1><i class="logo" aria-hidden="true"></i>Friend Finder</h1>
+            <hr>
+            <h4>Please answer these 10 questions. </h4>
+            <h5>Then match with your most compatibile new friend!</h5>
+            <h6><i>"Your friend is your needs answered."</i> -- Kahil Gibran</h6>
+            <br>
+          </div>
+          </jumbotron>
+          <div>
+            <a href="/survey"><button type="button" class="w3-btn btn-lg btn-primary">
+                <h6><span class="glyphicon glyphicon-list-alt"></span> Continue</h6>
+              </button></a>
+          </div>
+
       </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/doctoron/FriendFinder">GitHub
+              Repo</a></p> <!-- insert link to Heroku routed friends list-->
+        </div>
+      </footer>
 
     </div>
-
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/doctoron/FriendFinder">GitHub Repo</a></p> <!-- insert link to Heroku routed friends list--> 
-      </div>
-    </footer>
-
-  </div>
-
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 
 </html>
